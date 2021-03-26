@@ -19,5 +19,26 @@
   .margin-top-80 {
     margin-top: 80px;
   }
-
+/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
+@media (max-width: 1000px) {
+    .navbar li {
+      padding: 10px;
+    }
+  
+    .boxsummary {
+      margin-left: 0px;
+    }
+    .Secondboxsummary {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+  
+    .navbar ul {
+      visibility: hidden;
+    }
+  
+    #nav-select {
+      visibility: visible;
+    }
+  }
   
