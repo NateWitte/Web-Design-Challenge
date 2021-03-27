@@ -8,34 +8,40 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html" style="background: teal; color: white;padding: 5px;">Latitude</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Plots
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="plotfigureone.html">Max Temperature</a>
-            <a class="dropdown-item" href="plotfiguretwo.html">Humidity</a>
-            <a class="dropdown-item" href="plotfigurethree.html">Cloudiness</a>
-            <a class="dropdown-item" href="plotfigurefour.html">Wind Speed</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="comparison.html">Comparison <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="data.html">Data</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <div class="bigbox" style="background: lightgray;">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown link
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+    <div class="bigbox" style="background: lightgray;">
         <div class = "smallerbox">
             <div class="container" style="background: white; margin-left: 0px; padding-left: 40px;">
                 <div class = "row">
@@ -50,26 +56,38 @@
                 <div class = "row">
                     <div class = "col-lg-6" style = "text-align: center; color: teal;">
                         <strong>vs. Max Temperature</strong>
-                        <a href="plotfigureone.html"><img class="img-responsive" src="Resources/assets/images/Fig1.png" width=100%></a>
                     </div>
                     <div class = "col-lg-6" style = "text-align: center; color: teal;">
                         <strong>vs. Humidity</strong>
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class = "col-lg-6 col-sm-12 col-md-12">
+                        <a href="plotfigureone.html"><img class="img-responsive" src="Resources/assets/images/Fig1.png" width=100%></a>
+                    </div>
+                    <div class = "col-lg-6 col-sm-12 col-md-12">
                         <a href="plotfiguretwo.html"><img class="img-responsive" src="Resources/assets/images/Fig2.png" width=100%></a>
                     </div>
                 </div>
                 <div class = "row">
                     <div class = "col-lg-6" style = "text-align: center; color: teal;">
                         <strong>vs. Cloudiness</strong>
-                        <a href="plotfigurethree.html"><img class="img-responsive" src="Resources/assets/images/Fig3.png" width=100%></a>
                     </div>
                     <div class = "col-lg-6" style = "text-align: center; color: teal;">
                         <strong>vs. Wind Speed</strong>
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class = "col-lg-6 col-sm-12 col-md-12">
+                        <a href="plotfigurethree.html"><img class="img-responsive" src="Resources/assets/images/Fig3.png" width=100%></a>
+                    </div>
+                    <div class = "col-lg-6 col-sm-12 col-md-12">
                         <a href="plotfigurefour.html"><img class="img-responsive" src="Resources/assets/images/Fig4.png" width=100%></a>
                     </div>
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
